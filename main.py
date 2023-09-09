@@ -7,3 +7,4 @@ for i in range(20):
     plt.title("image1")
     plt.axis("off")
     plt.imshow(image)
+plt.show()
