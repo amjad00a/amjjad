@@ -1,0 +1,12 @@
+import cv2
+image=cv2.imread("ss.jpg")
+cv2.imshow("image_1",image)
+image_2=cv2.GaussianBlur(image,(7,7),0)
+cv2.imshow("image_2",image_2)
+image_3=cv2.medianBlur(image,7)
+cv2.imshow("image_3",image_3)
+image_44=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+image_4=cv2.equalizeHist(image_44)
+cv2.imshow("image_4",image_4)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
